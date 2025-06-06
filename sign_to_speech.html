@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Sign to Speech Converter</h2>
+<div id="video-container">
+    <img src="{% url 'sign_to_speech' %}" width="640" height="480">
+</div>
+<div id="instructions">
+    <h3>Supported Gestures:</h3>
+    <ul>
+        <li>Open palm: "Hello"</li>
+        <li>Fist: "How are you"</li>
+        <li>Thumbs up: "Good"</li>
+        <li>Thumbs down: "Bad"</li>
+        <li>Peace sign: "Peace"</li>
+        <li>Pointing: "You"</li>
+        <li>OK sign: "Okay"</li>
+        <li>Rock sign: "Cool"</li>
+        <li>Call sign: "Phone"</li>
+        <li>Pinch: "Small"</li>
+        <li>L shape: "Time"</li>
+    </ul>
+    <p>The system will continuously detect your hand gestures and speak the corresponding phrases.</p>
+</div>
+{% endblock %}
